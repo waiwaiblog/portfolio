@@ -1,48 +1,123 @@
 <template>
-  <div>
+  <v-card class="overflow-hidden">
     <v-app-bar
-      color="black accent-4"
+      flat
+      color="#FAFAFA"
       dense
-      dark
+      light
+      sizes="(max-height: 500px) 1000px"
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Page title</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-heart</v-icon>
-      </v-btn>
-
-      <v-btn icon>
-        <v-icon>mdi-magnify</v-icon>
-      </v-btn>
-
-      <v-menu
-        left
-        bottom
-      >
+      <v-tooltip bottom :disabled="tooltips">
         <template v-slot:activator="{ on, attrs }">
           <v-btn
-            icon
+            exact
+            to="/"
+            depressed
+            height="100%"
+            tile
+            text
             v-bind="attrs"
             v-on="on"
           >
-            <v-icon>mdi-dots-vertical</v-icon>
+            <v-icon>fa-igloo</v-icon>
           </v-btn>
         </template>
+        <span>Home</span>
+      </v-tooltip>
 
-        <v-list>
-          <v-list-item
-            v-for="n in 5"
-            :key="n"
-            @click="() => {}"
-          >
-            <v-list-item-title>Option {{ n }}</v-list-item-title>
-          </v-list-item>
-        </v-list>
-      </v-menu>
+
+      <v-spacer></v-spacer>
+
+      <v-tooltip bottom :disabled="tooltips">
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            exact
+            to="/profile"
+            depressed
+            height="100%"
+            tile
+            text
+            v-bind="attrs"
+            v-on="on">
+            <v-icon>fa-address-card</v-icon>
+          </v-btn>
+        </template>
+        <span>Profile</span>
+      </v-tooltip>
+
+      <v-tooltip bottom :disabled="tooltips">
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            exact
+            to="/works"
+            depressed
+            height="100%"
+            tile
+            text
+            v-bind="attrs"
+            v-on="on">
+            <v-icon>fa-briefcase</v-icon>
+          </v-btn>
+        </template>
+        <span>Works</span>
+      </v-tooltip>
+
+      <v-tooltip bottom :disabled="tooltips">
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            exact
+            to="/skills"
+            depressed
+            height="100%"
+            tile
+            text
+            v-bind="attrs"
+            v-on="on">
+            <v-icon>fa-code</v-icon>
+          </v-btn>
+        </template>
+        <span>Skills</span>
+      </v-tooltip>
+
+      <v-tooltip bottom :disabled="tooltips">
+
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            exact
+            to="/bbs"
+            depressed
+            height="100%"
+            tile
+            text
+            v-bind="attrs"
+            v-on="on">
+            <v-icon>mdi-comment-text-multiple-outline</v-icon>
+          </v-btn>
+        </template>
+        <span>BBS</span>
+      </v-tooltip>
+
     </v-app-bar>
-  </div>
+  </v-card>
 </template>
+
+<script>
+  export default {
+    name: 'HeaderVue',
+    computed: {
+      tooltips() {
+        return this.$vuetify.breakpoint.name == 'xs' || this.$vuetify.breakpoint.name == 'sm'
+      }
+    }
+  }
+</script>
+
+<style scoped>
+  .link--active {
+
+  }
+
+  .container {
+    max-width: 1000px;
+  }
+</style>

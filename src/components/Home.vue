@@ -1,7 +1,7 @@
 <template>
   <v-parallax
     light
-    src="@/assets/images/pic1.jpg"
+    src="@/assets/images/pic2.png"
     size
   >
     <v-row
