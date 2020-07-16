@@ -22,7 +22,7 @@
     name: 'Home',
     data() {
       return {
-        title: "waiwaiblog.net",
+        title: "YutaYamada.com",
         subTitle: "Welcome to my portfolio!",
 
       }

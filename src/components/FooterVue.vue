@@ -40,10 +40,10 @@
           icon: 'mdi-github',
           link: 'https://github.com/waiwaiblog'
         },
-        {
-          icon: 'mdi-twitter',
-          link: 'https://twitter.com/YYmd0525'
-        },
+        // {
+        //   icon: 'mdi-twitter',
+        //   link: 'https://twitter.com/YYmd0525'
+        // }
         {
           icon: 'mdi-instagram',
           link: 'https://www.instagram.com/y2_____/'

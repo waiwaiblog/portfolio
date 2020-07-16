@@ -52,21 +52,23 @@
 
           <v-card-subtitle class="pb-0 font1" align="right">
             <v-btn
+              v-if="item.isGitHub"
               class=""
               icon
               target="_blank"
               rel="noopener"
+              :href="item.github"
             >
               <v-icon size="20px">mdi-github</v-icon>
             </v-btn>
-            <v-btn
-              class="mr-2"
-              icon
-              target="_blank"
-              rel="noopener"
-            >
-              <v-icon size="20px">mdi-book-open-page-variant</v-icon>
-            </v-btn>
+<!--            <v-btn-->
+<!--              class="mr-2"-->
+<!--              icon-->
+<!--              target="_blank"-->
+<!--              rel="noopener"-->
+<!--            >-->
+<!--              <v-icon size="20px">mdi-book-open-page-variant</v-icon>-->
+<!--            </v-btn>-->
             <span class="bottom">{{ item.date }}</span></v-card-subtitle>
 
           <v-card-text class="text--primary">
@@ -99,9 +101,11 @@
         items: [
           {
             title: 'My Portfolio Site',
-            comment: '現在閲覧されている、当サイトです。Vuetifyを用いて制作しました。',
+            comment: '現在閲覧されている、当サイトです。Vue.js、Vuetifyを用いて制作しました。AWS EC2サーバー上で運営しております。',
             src: require('@/assets/images/ss1.png'),
             link: 'https://yutayamada.com',
+            github: 'https://github.com/waiwaiblog/portfolio',
+            isGitHub: true,
             date: '2020/06',
             tags: [
               {
@@ -123,10 +127,31 @@
             ]
           },
           {
+            title: 'ぶろぐ＠備忘録',
+            comment: 'WordPressを用いた勉強の備忘録ブログです。',
+            src: require('@/assets/images/ss8.png'),
+            link: 'https://waiwaiblog.net/blog',
+            github: '',
+            isGitHub: false,
+            date: '2020/03',
+            tags: [
+              {
+                color: '#117AC9',
+                value: 'WordPress',
+              },
+              {
+                color: '#4F5D95',
+                value: 'PHP',
+              },
+            ]
+          },
+          {
             title: 'Todos',
-            comment: '公式のtodoをコンポーネント化し、検索機能、並び替え機能を追加しました。',
+            comment: 'コンポーネントで切り分けて、編集機能、検索機能、並び替え機能など実装しています。',
             src: require('@/assets/images/ss2.png'),
-            link: 'https://google.com',
+            link: 'https://yutayamada.com/todos',
+            github: 'https://github.com/waiwaiblog/todos',
+            isGitHub: true,
             date: '2020/06',
             tags: [
               {
@@ -148,6 +173,8 @@
             comment: '以前にPHPで作ったものをLaravelで書き換えました。',
             src: require('@/assets/images/ss3.png'),
             link: 'https://yutayamada.com/gelande_michelin',
+            github: 'https://github.com/waiwaiblog/gelande_michelin',
+            isGitHub: true,
             date: '2020/05',
             tags: [
               {
@@ -165,6 +192,8 @@
             comment: '子ども用品専門のフリマサイトです。生のPHPで構築しています。',
             src: require('@/assets/images/ss4.png'),
             link: 'https://yutayamada.com/akachan',
+            github: 'https://github.com/waiwaiblog/akachan',
+            isGitHub: true,
             date: '2020/04',
             tags: [
               {
@@ -182,6 +211,8 @@
             comment: 'アルバムレビューサイト。生のPHPで構築しています。',
             src: require('@/assets/images/ss5.png'),
             link: 'https://yutayamada.com/nihongo_rap',
+            github: 'https://github.com/waiwaiblog/nihongo_rap',
+            isGitHub: true,
             date: '2020/04',
             tags: [
               {
@@ -199,6 +230,8 @@
             comment: 'ゲレンデレビューサイト。PHPを使った初めてのページ制作物。',
             src: require('@/assets/images/ss6.png'),
             link: 'https://yutayamada.com/gelandecom',
+            github: 'https://github.com/waiwaiblog/gelandecom',
+            isGitHub: true,
             date: '2020/03',
             tags: [
               {

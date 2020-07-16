@@ -68,6 +68,12 @@
           src: require('@/assets/images/css-3.svg'),
         },
         {
+          title: 'Sass',
+          comment: '',
+          color: '#e29fbd',
+          src: require('@/assets/images/sass.svg'),
+        },
+        {
           title: 'PHP',
           comment: '',
           color: '#4F5D95',
@@ -92,6 +98,12 @@
           src: require('@/assets/images/vue.svg'),
         },
         {
+          title: 'MySQL',
+          comment: '',
+          color: '#124e78',
+          src: require('@/assets/images/mysql.svg'),
+        },
+        {
           title: 'AmazonWebService',
           comment: '',
           color: '#f6b33f',
@@ -108,6 +120,12 @@
           comment: '',
           color: '#f18080',
           src: require('@/assets/images/git-icon.svg'),
+        },
+        {
+          title: 'AdobeXD',
+          comment: '',
+          color: '#F82CF4',
+          src: require('@/assets/images/adobexd.svg'),
         },
       ]
     })
