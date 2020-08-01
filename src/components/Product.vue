@@ -100,6 +100,28 @@
       return {
         items: [
           {
+            title: 'TypeForProgramming',
+            comment: 'プログラマー向けタイピングサービスを想定しました。LaravelとVueの組み合わせを行なった初の作品です。',
+            src: require('@/assets/images/ss9.png'),
+            link: 'https://yutayamada.com/typing_drill',
+            github: 'https://github.com/waiwaiblog/typing_drill',
+            isGitHub: true,
+            date: '2020/07',
+            tags: [
+              {
+                color: '#fa5e35',
+                value: 'Laravel',
+              },
+              {
+                color: '#199f4b',
+                value: 'Vue.js',
+              },
+              {
+                color: '#7952B3',
+                value: 'BootStrap',
+              },
+            ]
+          },          {
             title: 'My Portfolio Site',
             comment: '現在閲覧されている、当サイトです。Vue.js、Vuetifyを用いて制作しました。AWS EC2サーバー上で運営しております。',
             src: require('@/assets/images/ss1.png'),

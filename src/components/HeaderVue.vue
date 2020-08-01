@@ -79,23 +79,23 @@
         <span>Skills</span>
       </v-tooltip>
 
-      <v-tooltip bottom :disabled="tooltips">
+<!--      <v-tooltip bottom :disabled="tooltips">-->
 
-        <template v-slot:activator="{ on, attrs }">
-          <v-btn
-            exact
-            to="/bbs"
-            depressed
-            height="100%"
-            tile
-            text
-            v-bind="attrs"
-            v-on="on">
-            <v-icon>mdi-comment-text-multiple-outline</v-icon>
-          </v-btn>
-        </template>
-        <span>BBS</span>
-      </v-tooltip>
+<!--        <template v-slot:activator="{ on, attrs }">-->
+<!--          <v-btn-->
+<!--            exact-->
+<!--            to="/bbs"-->
+<!--            depressed-->
+<!--            height="100%"-->
+<!--            tile-->
+<!--            text-->
+<!--            v-bind="attrs"-->
+<!--            v-on="on">-->
+<!--            <v-icon>mdi-comment-text-multiple-outline</v-icon>-->
+<!--          </v-btn>-->
+<!--        </template>-->
+<!--        <span>BBS</span>-->
+<!--      </v-tooltip>-->
 
     </v-app-bar>
   </v-card>
